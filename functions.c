@@ -1,16 +1,16 @@
 #include "main.h"
 
-/************************* PRINT CHAR *************************/
+/* print char*/
 
 /**
- * print_char - prints a char
- * @types: list of args
- * @buffer: the buffer array that handles data to the printf function
- * @flags:  calculates active flags
- * @width: calculates the width of the printed chars.
- * @precision: precision specification
- * @size: size specifier
- * Return: the number of printed chars
+ * print_char - Prints a char
+ * @types: List of args
+ * @buffer: The buffer array that handles data to the printf function
+ * @flags:  Calculates active flags
+ * @width: Calculates the width of the printed chars.
+ * @precision: Precision specification
+ * @size: Size specifier
+ * Return: The number of printed chars
  */
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -19,16 +19,16 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
-/************************* PRINT A STRING *************************/
+/* prints a string */
 /**
- * print_string - prints a string
- * @types: list of args
- * @buffer: the buffer array that handles data to the printf function
- * @flags:  calculates active flags
- * @width: calculates the width of the printed strings.
- * @precision: precision specification
- * @size: size specifier
- * Return: the number of printed strings
+ * print_string - Prints a string
+ * @types: List of args
+ * @buffer: The buffer array that handles data to the printf function
+ * @flags:  Calculates active flags
+ * @width: Calculates the width of the printed strings.
+ * @precision: Precision specification
+ * @size: Size specifier
+ * Return: The number of printed strings
  */
 int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -74,16 +74,16 @@ int print_string(va_list types, char buffer[],
 
 	return (write(1, str, length));
 }
-/************************* PRINT PERCENT SIGN *************************/
+/* print percentage signs */
 /**
- * print_percent - prints a percent sign
- * @types: list of args
- * @buffer: the buffer array that handles data to the printf function
- * @flags:  calculates active flags
- * @width: calculates the width of the printed signs.
- * @precision: precision specification
- * @size: size specifier
- * Return: the number of printed percentage signs
+ * print_percent - Prints a percent sign
+ * @types: List of args
+ * @buffer: The buffer array that handles data to the printf function
+ * @flags:  Calculates active flags
+ * @width: Calculates the width of the printed signs.
+ * @precision: Precision specification
+ * @size: Size specifier
+ * Return: The number of printed percentage signs
  */
 int print_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -97,16 +97,16 @@ int print_percent(va_list types, char buffer[],
 	return (write(1, "%%", 1));
 }
 
-/************************* PRINT INT *************************/
+/* print integers */
 /**
- * print_int - print int
- * @types: list of args
- * @buffer: the buffer array that handles data to the printf function
- * @flags:  calculates active flags
- * @width: calculates the width of the printed ints.
- * @precision: precision specification
- * @size: size specifier
- * Return: the number of printed integers
+ * print_int - Print int
+ * @types: List of args
+ * @buffer: The buffer array that handles data to the printf function
+ * @flags:  Calculates active flags
+ * @width: Calculates the width of the printed ints.
+ * @precision: Precision specification
+ * @size: Size specifier
+ * Return: The number of printed integers
  */
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -141,7 +141,7 @@ int print_int(va_list types, char buffer[],
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 
-/************************* PRINT BINARY *************************/
+/* prints binary representation */
 /**
  * print_binary - prints an unsigned number
  * @types: list of item

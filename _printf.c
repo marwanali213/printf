@@ -3,9 +3,9 @@
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
- * _printf - this is the printf function
- * @format: format.
- * Return: it returns the printed characters.
+ * _printf - This is the printf function
+ * @format: Format.
+ * Return: It returns the printed characters.
  */
 int _printf(const char *format, ...)
 {
@@ -25,8 +25,7 @@ int _printf(const char *format, ...)
 		{
 			buffer[buff_ind++] = format[i];
 			if (buff_ind == BUFF_SIZE)
-				print_buffer(buffer, &buff_ind);
-			/* write(1, &format[i], 1);*/
+				print_buffer(buffer, &buff_ind)
 			printed_chars++;
 		}
 		else
@@ -53,9 +52,9 @@ int _printf(const char *format, ...)
 }
 
 /**
- * print_buffer - this is the channel that the output goes through
- * @buffer: array of characters
- * @buff_ind: this is the index of the next will be inserted character , or the length of the array's buffer
+ * print_buffer - This is the channel that the output goes through it
+ * @buffer: Array of characters
+ * @buff_ind: This is the index of the next will be inserted character , or the length of the array's buffer
  */
 void print_buffer(char buffer[], int *buff_ind)
 {

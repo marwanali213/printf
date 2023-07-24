@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * get_precision - Calculates the precision for printing
- * @format: Formatted string in which to print the arguments
- * @i: List of arguments to be printed.
- * @list: list of arguments.
+ * get_precision - Calculates the precision used in printing
+ * @format: Formatted string to print the arguments
+ * @i: List of arguments to be printed after excuting the code.
+ * @list: List of arguments that will be input.
  *
- * Return: Precision.
+ * Return: Precision numbers.
  */
 int get_precision(const char *format, int *i, va_list list)
 {
