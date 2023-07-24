@@ -55,7 +55,7 @@ int _printf(const char *format, ...)
 /**
  * print_buffer - this is the channel that the output goes through
  * @buffer: array of characters
- * @buff_ind: this is the index of the next will be inserted character , or the length of the array's buffer
+ * @buff_ind: this is the index of the next will be inserted character
  */
 void print_buffer(char buffer[], int *buff_ind)
 {
